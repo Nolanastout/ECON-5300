@@ -1,0 +1,38 @@
+
+\begingroup
+\centering
+\begin{tabular}{lcc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{2}{c}{Weekly\_Sales}\\
+                    & Linear Model      & Quadratic Model (Preferred) \\   
+   Model:           & (1)               & (2)\\  
+   \midrule
+   \emph{Variables}\\
+   Temperature      & 695.6$^{**}$      & 3,413.5$^{***}$\\   
+                    & (317.9)           & (1,191.9)\\   
+   Holiday\_Flag    & 32,288.8$^{***}$  & 34,530.1$^{***}$\\   
+                    & (5,577.6)         & (5,935.2)\\   
+   Unemployment     & -31,738.9$^{***}$ & -32,958.9$^{***}$\\   
+                    & (11,427.2)        & (11,242.3)\\   
+   Fuel\_Price      & -25,336.7$^{*}$   & -24,477.9$^{*}$\\   
+                    & (12,909.3)        & (12,779.2)\\   
+   CPI              & 907.0             & 542.0\\   
+                    & (2,390.6)         & (2,351.9)\\   
+   Temperature\_sq  &                   & -26.67$^{**}$\\   
+                    &                   & (11.15)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   Store            & Yes               & Yes\\  
+   Month            & Yes               & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations     & 6,435             & 6,435\\  
+   R$^2$            & 0.93737           & 0.93760\\  
+   Within R$^2$     & 0.01788           & 0.02162\\  
+   \midrule \midrule
+   \multicolumn{3}{l}{\emph{Clustered (Store) standard-errors in parentheses}}\\
+   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+
+
